@@ -7,6 +7,7 @@ export const signupController = async (
   res: Response
 ) => {
   const { email, password } = req.body;
+  console.log(' req.body: ',  req.body);
 
   const existing = await findUserByEmail(email);
   if (existing) {

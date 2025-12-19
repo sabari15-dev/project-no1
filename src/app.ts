@@ -7,5 +7,8 @@ app.use(express.json());
 
 // Direct route registration
 app.use("/auth", authRoutes);
+app.get("/health", (_req, res) => {
+  res.send("OK");
+});
 
 export default app;

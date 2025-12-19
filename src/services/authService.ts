@@ -25,7 +25,7 @@ export const createUser = async (user: User): Promise<void> => {
 };
 
 export const findUserByEmail = async (
-  email: string
+  email: string 
 ): Promise<User | null> => {
   const db = getDB();
 
